@@ -1,3 +1,11 @@
-# === Logger cơ bản ===
-def log(msg):
-    print(f"[LOG] {msg}")
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[logging.StreamHandler()]
+)
+
+def get_logger(name):
+    return logging.getLogger(name)
+
