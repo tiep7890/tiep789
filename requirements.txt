@@ -1,0 +1,4 @@
+discord.py>=2.0.0
+# Thêm các thư viện khác nếu bạn dùng, ví dụ:
+# requests
+# beautifulsoup4
